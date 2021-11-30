@@ -7,15 +7,17 @@
 
         <a-assets>
           <!--On charge les textures du sol-->
-          <img id="marbre" src="/assets/textures/sols/marbre/marbre_occlusion.jpg"></img>
-          <img id="marbre_color" src="/assets/textures/sols/marbre/marbre_basecolor.jpg"></img>
+          <img id="marbre" src="assets/textures/sols/marbre/marbre_occlusion.jpg"></img>
+          <!-- <img id="marbre_color" src="/assets/textures/sols/marbre/marbre_basecolor.jpg"></img>
           <img id="marbre_roughness" src="/assets/textures/sols/marbre/marbre_roughness.jpg"></img>
-          <img id="marbre_height" src="/assets/textures/sols/marbre/marbre_height.png"></img>
+          <img id="marbre_height" src="/assets/textures/sols/marbre/marbre_height.png"></img> -->
           <!-- On charge le fauteuil -->
-          <a-asset-item id="fauteuil" src="/assets/obj/fauteuil/fauteuil.obj"></a-asset-item>
-          <a-asset-item id="fauteuil-mtl" src="/assets/obj/fauteuil/fauteuil.mtl"></a-asset-item>
+          <a-asset-item id="fauteuil" src="assets/obj/fauteuil/fauteuil.obj"></a-asset-item>
+          <a-asset-item id="fauteuil-mtl" src="assets/obj/fauteuil/fauteuil.mtl"></a-asset-item>
           <!-- On charge le bureau -->
-          <a-asset-item id="desk" src="/assets/obj/desk/Desk.obj"></a-asset-item>
+          <a-asset-item id="desk" src="assets/obj/desk/Desk.obj"></a-asset-item>
+          
+          <a-asset-item id="commode" src="assets/obj/comode/maison.gltf"></a-asset-item>
         </a-assets>
 
         <!-- lumières Aziz !!! -->
@@ -24,12 +26,15 @@
         <!-- de quoi s'assoire -->
         <a-entity obj-model="obj: #fauteuil; mtl: #fauteuil-mtl" position="-2 0 -3" rotation="0 90 0"></a-entity>
 
+        
+        <a-entity gltf-model="obj: #commode" position="-2 0 -3" rotation="0 90 0"></a-entity>
+
         <!--Le bureau du chef-->
         <a-entity obj-model="obj: #desk" position="2 0 -3" rotation="0 90 0" scale="0.004 0.004 0.004"></a-entity>
 
         <!--Le sol-->
-        <a-plane position="15 0 15" rotation="-90 0 0" width="50" height="50"  src="#marbre" repeat="60 60" 
-        normal-texture-repeat="11" ></a-plane>
+        <!-- <a-plane position="15 0 15" rotation="-90 0 0" width="50" height="50"  src="#marbre" repeat="60 60" 
+        normal-texture-repeat="11" ></a-plane> -->
         <!-- <a-plane position="15 0 15" rotation="-90 0 0" width="50" height="50"  src="#marbre_height" repeat="60 60" 
         normal-texture-repeat="11" ></a-plane>
         <a-plane position="15 0 15" rotation="-90 0 0" width="50" height="50" color="#FFF" src="#marbre_color" repeat="60 60" 
