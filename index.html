@@ -4,7 +4,12 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <a-scene>
+    <a-scene renderer="antialias: true;
+    colorManagement: true;
+    sortObjects: true;
+    physicallyCorrectLights: true;
+    maxCanvasWidth: 1920;
+    maxCanvasHeight: 1920;">
 
       <a-assets>
         <!--On charge les textures du sol-->
