@@ -1,0 +1,17 @@
+Baby Yoda Rig
+By Corey Drake
+v007
+
+This rig is totally free. I don't own the rights, as I just created this as a fan.
+A lot of work went into this, so if it helps you out, please send the result
+because it really makes my day finding my rigs in use in projects.
+
+Please email corey@steakosaurus.com for any problems with the rig.
+
+General rig overview: http://steakosaurus.com/baby-yoda-model-texture-rig/
+
+Video showing how to control all aspects of the rig including locations of
+IK/FK switches and phenome controls: https://www.youtube.com/watch?v=3Oey1e10jNQ
+
+Youtube: https://www.youtube.com/channel/UCiVswKO6G1Wp5L3jDfT4m4A
+Twitch: https://www.twitch.tv/steakosaurus_rex
