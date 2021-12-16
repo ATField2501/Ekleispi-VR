@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <a-scene debug background="darkgrey" fog="type: linear; color: #AAA">
+    <a-scene>
 
       <a-assets>
         <!--On charge les textures du sol-->
@@ -289,12 +289,12 @@
 
       <a-entity 
         hand-controls="" magicleap-controls="hand: left; model: false" 
-        vive-controls="model: false" oculus-touch-controls="model: false" 
+        vive-controls="model: false" oculus-touch-controls="model: true" 
         windows-motion-controls="hand: left; model: false" position="0.10046 1.3 0">
       </a-entity>
       <a-entity 
         hand-controls="" magicleap-controls="hand: right; model: false" 
-        vive-controls="model: false" oculus-touch-controls="model: false" 
+        vive-controls="model: false" oculus-touch-controls="model: true" 
         windows-motion-controls="hand: left; model: false" position="-0.10046 1.3 0">
       </a-entity>
 
