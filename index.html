@@ -6,7 +6,7 @@
   </head>
   <body>
     <a-scene loading-screen="dotsColor: red; backgroundColor: black">
-
+        <a-entity progressive-controls></a-entity>
       <a-assets>
         <!--On charge les textures du sol-->
         <img id="marbre" src="assets/textures/sols/marbre/marbre_occlusion.jpg"></img>
@@ -75,7 +75,7 @@
       
       <a-entity sphere-collider="objects: a-box" super-hands hand-controls="hand: left"></a-entity>
       <a-entity sphere-collider="objects: a-box" super-hands hand-controls="hand: right"></a-entity>
-
+      
       <a-box color="yellow" position="0 1.5 -0.5" depth="0.1" height="0.1" width="0.1" grabbable></a-box>
 
     </a-scene>
