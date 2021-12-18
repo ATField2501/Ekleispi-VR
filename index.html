@@ -26,7 +26,10 @@
         animation="property: position; to: -0.1 2 -1; loop:true; dir:alternate; dur:2000; easing:easeInOutQuart ">
       </a-entity>
       <a-sky color="white" src="#ciel" ></a-sky>
-
+      <a-entity id="player" collider-check>
+        <a-entity raycaster="objects: .collidable" position="0 -0.9 0" rotation="90 0 0"></a-entity>
+      </a-entity>
+      <a-entity class="collidable" mixin="cube" geometry="primitive: box" position="0 1 .1" material="color: red"></a-entity>
 
       <a-mixin id="cube" geometry="primitive: box; width: 0.33; height: 0.33; depth: 0.33"
                  hoverable grabbable stretchable draggable droppable
@@ -35,7 +38,7 @@
                  body="shape: box" shadow></a-mixin>
         </a-mixin>
 
-        <a-entity class="cube" mixin="cube" position="0 1 -1" material="color: red"></a-entity>
+        <!-- <a-entity class="cube" mixin="cube" position="0 1 -1" material="color: red"></a-entity> -->
       <a-entity class="cube" mixin="cube" position="0 1 -0.5" material="color: red"></a-entity>
       <a-entity class="cube" mixin="cube" position="-1 1 -1" material="color: blue"></a-entity>
       <a-entity class="cube" mixin="cube" position="-1 1 -0.5" material="color: blue"></a-entity>
