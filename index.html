@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <a-scene physics="debug: true">
+    <a-scene physics="debug: true" id="world">
 
       <a-assets>
         <!--textures du sol-->
@@ -89,7 +89,7 @@
       <a-entity laser-controls="hand: left"  raycaster="lineColor: red; lineOpacity: 0.5" defaultModelColor="#ffd700"></a-entity>
       <a-entity laser-controls="hand: right" raycaster="lineColor: red; lineOpacity: 0.5" defaultModelColor="#ffd700"></a-entity>
 
-
+      <script src="main.js"></script>
       <!-- <a-entity 
         hand-controls="" magicleap-controls="hand: right; model: false" 
         vive-controls="model: false" oculus-touch-controls="model: true" 
